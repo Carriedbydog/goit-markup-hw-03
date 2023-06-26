@@ -66,17 +66,20 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 12x;
-    padding-right: 12px;
-    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1158px;
     outline: 2px solid tomato;
 }
 /* --------------Main Nav-------------- */
-
-.page-nav {
+.header-container {
     display: flex;
     align-items: center;
 }
+/* .page-nav {
+    display: flex;
+    align-items: center;
+} */
 .menu {
     display: flex;
     margin-left: 76px;
@@ -262,11 +265,15 @@ color: #404bbf;
 
 
 /* ===============Footer=============== */
+
+
 .footer {
     background-color: #2e2f42;
     height: 312px;
 }
 .logo-first-part-footer {
+    padding-top: 0;
+    padding-bottom: 0;
     display: inline-block;
     margin-top: 101.5px;
     margin-bottom: 17.5px;
@@ -279,6 +286,8 @@ color: #404bbf;
         color: #4d5ae5;
 }
 .logo-second-part-footer {
+    padding-top: 0;
+    padding-bottom: 0;
     display: inline-block;
     margin-top: 101.5px;
         margin-bottom: 17.5px;

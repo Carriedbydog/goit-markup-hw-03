@@ -7,10 +7,12 @@
 --button-background: #F4F4FD;
 --iris: #4D5AE5;
 --cornflower: #E7E9FC;
+--secondary-logo-header-color: #2e2f42;
+/* =======Fonts====== */
+--font-logo: font-family: 'Raleway', sans-serif;
 }
-h1,h2,h3,h4,h5,h6 {
-    margin-top: 0;
-    margin-bottom: 0;
+h1,h2,h3,h4,h5,h6,p {
+   margin: 0;
 }
 .list {
     padding: 0;
@@ -20,6 +22,15 @@ h1,h2,h3,h4,h5,h6 {
 .link {
     text-decoration: none;
 }
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1158px;
+    outline: 2px solid tomato;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
@@ -39,8 +50,7 @@ body {
     padding-top: 25.5px;
     padding-bottom: 25.5px;
 
-     font-family: 'Raleway', sans-serif;
-    font-style: normal;
+    font-family: var(--font-logo);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
@@ -53,24 +63,16 @@ body {
     padding-top: 25.5px;
     padding-bottom: 25.5px;
 
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
+    font-family: var(--font-logo);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2e2f42;
+    color: var(--secondary-logo-header-color);
 
 }
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1158px;
-    outline: 2px solid tomato;
-}
+
 /* --------------Main Nav-------------- */
 .header-container {
     display: flex;
@@ -327,12 +329,13 @@ color: #404bbf;
     border-radius: 4px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     border: 1px solid var(--cornflower, #E7E9FC);
-    font-family: 'Roboto', sans-serif;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+
     color: var(--button-color);
     background-color: var(--button-background);
 }
@@ -369,8 +372,4 @@ color: #404bbf;
         align-self: stretch;
 }
 /* ===============/Portfolio=============== */
-
-
-
-
 

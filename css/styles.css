@@ -49,6 +49,10 @@ body {
     margin-top: 114px;
     margin-bottom: 120px;
 }
+
+img { 
+    display: block;
+}
 /**
   |============================
   | Header

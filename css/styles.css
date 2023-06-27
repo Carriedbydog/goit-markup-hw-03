@@ -8,7 +8,11 @@
 --iris: #4D5AE5;
 --cornflower: #E7E9FC;
 --secondary-logo-header-color: #2e2f42;
-/* =======Fonts====== */
+/**
+  |============================
+  | Fonts
+  |============================
+*/
 --font-logo: font-family: 'Raleway', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p {
@@ -28,7 +32,7 @@ h1,h2,h3,h4,h5,h6,p {
     padding-left: 15px;
     padding-right: 15px;
     width: 1158px;
-    outline: 2px solid tomato;
+   
 }
 
 body {
@@ -45,7 +49,11 @@ body {
     margin-top: 114px;
     margin-bottom: 120px;
 }
-/* ===============HEADER=============== */ 
+/**
+  |============================
+  | Header
+  |============================
+*/
 .logo-first-part-header {
     padding-top: 25.5px;
     padding-bottom: 25.5px;
@@ -73,7 +81,6 @@ body {
 
 }
 
-/* --------------Main Nav-------------- */
 .header-container {
     display: flex;
     align-items: center;
@@ -107,10 +114,10 @@ body {
 .menu-link:hover,
 .menu-link:focus {
     color: #404bbf;
-/* --------------/Main Nav-------------- */
+
 }
 
-/* =======================Address ============================*/
+/* --------------------Address--------------------- */
 address {
     font-style: normal;
 }
@@ -140,23 +147,37 @@ address {
 .address-link:focus {
 color: #404bbf;
 }
-/* =======================/Address ============================*/
 
-                    /* ===============/HEADER=============== */
+/* --------------------/Address--------------------- */
 
-/* ===============Hero=============== */
+/**
+  |============================
+  | /HEADER
+  |============================
+*/
+
+/**
+  |============================
+  | HERo
+  |============================
+*/
 .hero {
-    outline: 2px solid tomato;
+   
     background-color: #2e2f42;
     text-align: center;
+    height: 600px;
 }
-.main-title {
-    margin-top: 0;
+
+.hero-title {
+    align-items: center;
+    width: 496px;
+    margin: auto;
     margin-bottom: 48px;
+ 
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
     
@@ -179,13 +200,32 @@ color: #404bbf;
 .order-button:focus {
     background-color: #404BBF
 }
-/* ===============/Hero=============== */
+/**
+  |============================
+  | /HERO
+  |============================
+*/
 
-/* ===============Our Goals=============== */
+
+/**
+  |============================
+  | OUR GOALS
+  |============================
+*/
 .invisible-head {
     margin-top: 0;
     margin-bottom: 0;
 
+}
+
+.goals-menu {
+    display: flex;
+    
+}
+
+goals-list {
+    width: 264px;
+    margin-right: 24px;
 }
 
 .goals-item {
@@ -207,11 +247,20 @@ color: #404bbf;
         letter-spacing: 0.02em;
         color: var(--descriptions);
 }
-/* ===============/Our Goals=============== */
+
+/**
+  |============================
+  | /OUR GOALS
+  |============================
+*/
 
 
-/* ===============Our Services=============== */
-.services {
+/**
+  |============================
+  | OUR SERVICES
+  |============================
+*/
+.services-title {
     margin-top: 0;
     margin-bottom: 72px;
         font-weight: 700;
@@ -222,13 +271,38 @@ color: #404bbf;
         text-transform: capitalize;
         color: var(--headers-description);
 }
-/* ===============/Our Services=============== */
 
-/* ===============Our Team=============== */
+.services-list {
+    display: flex;
+    
+    
+}
+
+.services-item {
+    width: calc((100% - 48) / 3) ;
+    margin-right: 24px;
+    
+}
+
+.services-item:nth-child(3n) {
+    margin-right: 0px;
+}
+/**
+  |============================
+  | /OUR SERVICES
+  |============================
+*/
+
+
+/**
+  |============================
+  | OUR TEAM
+  |============================
+*/
 .our-team-section {
     background-color: #F4F4FD
 }
-.team-section {
+.team-title {
     margin-top: 0;
     margin-bottom: 72px;
     font-weight: 700;
@@ -241,10 +315,20 @@ color: #404bbf;
 
 }
 .team-menu {
+    display: flex;
+    text-align: center;
+
     background-color: #FFFFFF
 }
 .team-item {
+    margin-right: 24px;
+    width: calc((100%-70) / 4);
+
     background-color: #FFFFFF;
+}
+
+.team-item:nth-child(4n){
+    margin-right: 0;
 }
 .team-name {
     margin-top: 32px;
@@ -265,10 +349,18 @@ color: #404bbf;
         color: var(--descriptions);
 }
 
-/* ===============/Our Team=============== */
+/**
+  |============================
+  | /OUR TEAM
+  |============================
+*/
 
 
-/* ===============Footer=============== */
+/**
+  |============================
+  | FOOTER
+  |============================
+*/
 
 
 .footer {
@@ -278,9 +370,6 @@ color: #404bbf;
 .logo-first-part-footer {
     padding-top: 0;
     padding-bottom: 0;
-    display: inline-block;
-    margin-top: 101.5px;
-    margin-bottom: 17.5px;
     font-family: 'Raleway', sans-serif;
         font-weight: 800;
         font-size: 18px;
@@ -292,9 +381,6 @@ color: #404bbf;
 .logo-second-part-footer {
     padding-top: 0;
     padding-bottom: 0;
-    display: inline-block;
-    margin-top: 101.5px;
-        margin-bottom: 17.5px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -303,8 +389,17 @@ color: #404bbf;
     text-transform: uppercase;
     color: var(--footer-description);
 }
+
+.footer-logo {
+    display:inline-block;
+    margin-top: 101.5px;
+    margin-bottom: 17.5px;
+}
+
 .footer-description {
-    margin-top: 0;
+   display: block;
+   flex-direction: column;
+    margin-top: 17.5px;
     margin-bottom: 100px;
         font-weight: 400;
         font-size: 16px;
@@ -312,20 +407,42 @@ color: #404bbf;
         letter-spacing: 0.02em;
         color:var(--footer-description);
 }
-/* ===============/Footer=============== */
+
+/**
+  |============================
+  | /FOOTER
+  |============================
+*/
 
 
-/* ===============Portfolio=============== */
-.portfolio-job-list {
-    outline: 2px solid tomato;
-}
+/**
+  |===========================================================================
+  | PORTFOLIO
+  |===========================================================================
+*/
+
+
 .portfolio-list {
     text-decoration: none;
 }
+
+.filter-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-item {
+    margin-right: 24px;
+}
+
+.filter-item:nth-child(5n) {
+    margin-right: 0;
+}
+
 .filter-button {
-    outline: 2px solid tomato;
-    padding-top: 12px;
-    padding-bottom: 24px;
+    
+    padding: 12px 24px;
+
     border-radius: 4px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
     border: 1px solid var(--cornflower, #E7E9FC);
@@ -345,6 +462,32 @@ color: #404bbf;
     color: #FFFFFF;
     
 }
+
+.portfolio-job-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.portfolio-list {
+    margin-right: 24px;
+    margin-bottom: 48px;
+    width: 360px;
+    
+}
+.portfolio-list:nth-child(3n) {
+    margin-right: 0;
+    
+}
+
+.portfolio-list:nth-child(-n+3) {
+    margin-top: 72px;
+}
+
+.portfolio-links {
+    display: flex;
+}
+
 .portfolio-list-head {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -371,7 +514,12 @@ color: #404bbf;
         gap: 8px;
         align-self: stretch;
 }
-/* ===============/Portfolio=============== */
+
+/**
+  |==============================================================================
+  | /PORTFOLIO
+  |==============================================================================
+*/
 
 
 

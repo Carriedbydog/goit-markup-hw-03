@@ -55,7 +55,7 @@ img {
   |============================
 */
 .logo-first-part-header {
-    /* margin-right: 76px; */
+    margin-right: 76px;
     padding-top: 25.5px;
     padding-bottom: 25.5px;
 
@@ -69,7 +69,6 @@ img {
 
 }
 .logo-second-part-header {
-    margin-right: 76px;
     font-family: var(--font-logo);
     font-weight: 800;
     font-size: 18px;

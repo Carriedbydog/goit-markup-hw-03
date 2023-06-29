@@ -8,6 +8,9 @@
 --iris: #4D5AE5;
 --cornflower: #E7E9FC;
 --secondary-logo-header-color: #2e2f42;
+--filter-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 /**
   |============================
   | Fonts
@@ -49,6 +52,22 @@ body {
 img { 
     display: block;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 /**
   |============================
   | Header
@@ -93,13 +112,8 @@ img {
 }
 .menu {
     display: flex;
-    margin-left: 76px;
     gap: 40px;
 }
-
-/* .menu-item + .menu-item {
-    margin-left: 40px;
-} */
 
 .menu-link {
     display: block;
@@ -223,20 +237,6 @@ color: #404bbf;
   |============================
 */
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .section-goals {
     padding: 120px 0;
 }
@@ -331,10 +331,12 @@ color: #404bbf;
   | OUR TEAM
   |============================
 */
-
+.team {
+    background-color: #F4F4FD;
+}
 .our-team-section {
     padding: 120px 0;
-    background-color: #F4F4FD
+    background-color: #F4F4FD;
 }
 
 .team-title {
@@ -355,7 +357,7 @@ color: #404bbf;
     display: flex;
     text-align: center;
 
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
 }
 .team-item {
     margin-right: 24px;
@@ -418,7 +420,7 @@ color: #404bbf;
     padding-bottom: 0;
     margin-bottom: 16px;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--font-logo);
     font-weight: 800;
      font-size: 18px;
      line-height: 1.17;
@@ -430,7 +432,7 @@ color: #404bbf;
     padding-top: 0;
     padding-bottom: 0;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--font-logo);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.5;
@@ -491,7 +493,7 @@ color: #404bbf;
     padding: 12px 24px;
     
     border-radius: 4px;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: var(--filter-box-shadow);
     border: 1px solid var(--cornflower, #E7E9FC);
     
     font-weight: 500;
@@ -519,7 +521,7 @@ color: #404bbf;
 
 .portfolio-list {
     margin-right: 24px;
-    margin-bottom: 48px;
+    
     width: calc((100% - 48px) / 3);
     
 }
@@ -527,10 +529,6 @@ color: #404bbf;
     margin-right: 0;
     
 }
-
-/* .portfolio-list:nth-child(-n+3) {
-    margin-top: 72px;
-} */
 
 .portfolio-links {
     display: flex;
